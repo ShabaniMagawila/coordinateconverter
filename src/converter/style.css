@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 10, 2020, 1:58:42 PM
+    Author     : Shabani Magawila
+*/
+
+.txt {
+    -fx-alignment: center;
+    -fx-background-color: greenyellow;
+    -fx-font:italic;
+}
+.result{
+    text-align: center;
+    text-indent: 9px;
+}
+.button {
+    -fx-background-color: blue;
+    -fx-background-radius: 20 20 20 20;
+    -fx-text-fill: whitesmoke;
+    -fx-border-color: yellow;
+    -fx-border-radius: 20 20 20 20;
+}
+.body {
+    -fx-background-color:brown;
+}
+.pane {
+    -fx-background-radius: 20 0 20 0;
+    -fx-background-color: black;
+}

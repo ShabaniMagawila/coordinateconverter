@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="308.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="converter.convertController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TitledPane animated="false" layoutX="7.0" text="Converter" textFill="#0cb8f7" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+            <AnchorPane styleClass="body" stylesheets="@style.css">
+               <children>
+                  <ImageView blendMode="SCREEN" cache="true" cacheHint="QUALITY" depthTest="ENABLE" fitHeight="329.0" fitWidth="877.0" focusTraversable="true" mouseTransparent="true" nodeOrientation="INHERIT" opacity="0.17" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@img/echain_connected_world.gif" />
+                     </image>
+                     <effect>
+                        <Reflection />
+                     </effect>
+                  </ImageView>
+                  <Pane layoutX="397.0" layoutY="44.0" opacity="0.67" prefHeight="289.0" prefWidth="480.0" styleClass="pane" stylesheets="@style.css">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="TOP" layoutX="117.0" layoutY="257.0" lineSpacing="3.0" prefHeight="18.0" prefWidth="246.0" styleClass="txt" stylesheets="@style.css" text="Designed by: Shabani Magawila" textAlignment="JUSTIFY" textFill="#0602e8" underline="true" wrapText="true">
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="display" editable="false" layoutX="127.0" layoutY="178.0" prefHeight="59.0" prefWidth="227.0" promptText="Result" styleClass="result" stylesheets="@style.css">
+                           <font>
+                              <Font name="Times New Roman Bold" size="22.0" />
+                           </font>
+                        </TextArea>
+                        <TextField fx:id="txt2" floatText="Minutes" layoutX="83.0" layoutY="97.0" prefHeight="36.0" prefWidth="57.0" styleClass="txt" stylesheets="@style.css" />
+                        <TextField fx:id="txt1" floatText="Degree" layoutX="21.0" layoutY="97.0" prefHeight="0.0" prefWidth="49.0" styleClass="txt" stylesheets="@style.css" />
+                        <TextField fx:id="txt3" floatText="Seconds" layoutX="159.0" layoutY="97.0" prefHeight="36.0" prefWidth="55.0" style="-fx-background-position: center;" styleClass="txt" stylesheets="@style.css" />
+                        <JFXButton layoutX="267.0" layoutY="125.0" onMousePressed="#convertButton" prefHeight="40.0" prefWidth="145.0" stylesheets="@style.css" text="Convert" textFill="#251c1c">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="51.0" layoutY="60.0" styleClass="txt" stylesheets="@style.css" text="Input Coordinates:" textFill="#1a87b0" />
+                     </children></Pane>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+    </children>
+</AnchorPane>
